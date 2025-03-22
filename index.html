@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ammu S, a web developer.">
+    <meta name="keywords" content="Ammu S, web developer, portfolio, projects, contact">
+    <title>Ammu S - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe4e1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #007bff;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .profile-image {
+                width: 120px;
+                height: 10px;
+               
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ammu S</h1>
+        <p>Web Developer</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <img src="ammu.jpg" alt="Profile picture of Ammu S" class="profile-image">
+        
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ammu S, a passionate web developer with a knack for creating dynamic and responsive web applications. I love coding and am always eager to learn new technologies.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> A responsive e-commerce website built with HTML, CSS, and JavaScript.</li>
+                <li><strong>Project 2:</strong> A personal blog platform using React and Node.js.</li>
+                <li><strong>Project 3:</strong> A weather application that fetches data from a public API.</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <section id="testimonials" class="card">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Ammu is a talented developer who consistently delivers high-quality work. Her attention to detail is impressive!"</p>
+                <footer>PREETI <Ri:a></Ri:a></footer>
+            </blockquote>
+            <blockquote>
+                <p>"Working with Ammu was a great experience. She is dedicated and always meets deadlines!"</p>
+                <footer>ANU S</footer>
+            </blockquote>
+        </section>
+
+        <section id="resume" class="card">
+            <h2>Resume</h2>
+            <p>You can download my resume <a href="CV_2025032016423982.pdf" target="_blank" download>here</a>.</p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:ammu@example.com">ammu@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/ammus" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ammu S. All rights reserved.</p>
+    </footer>
+</body>
+</html>
