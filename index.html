@@ -44,14 +44,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
         }
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 100%; /* Responsive width */
+            max-width: 150px; /* Maximum width */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 20%;
-            position:absolute;
-            border:2px solid;
+            border: 2px solid;
             margin: 20px 0;
         }
         h2 {
@@ -79,12 +78,13 @@
         /* Responsive Styles */
         @media (max-width: 768px) {
             .profile-image {
-                width: 120px;
-                height: 10px;
-               
+                max-width: 120px; /* Adjust max width for tablets */
             }
         }
         @media (max-width: 480px) {
+            .profile-image {
+                max-width: 100px; /* Adjust max width for mobile phones */
+            }
             nav {
                 flex-direction: column;
             }
@@ -110,7 +110,7 @@
     </nav>
 
     <div class="container">
-        <img src="ammu.jpg" alt="Profile picture of Ammu S" class="profile-image">
+        <img src="ammu.jpg" alt="Profile picture of Ammu S, a web developer" class="profile-image">
         
         <section id="about" class="card">
             <h2>About Me</h2>
@@ -125,8 +125,7 @@
                 <li><strong>Project 3:</strong> A weather application that fetches data from a public API.</li>
             </ul>
         </section>
-
-        <section id="skills" class="card">
+         <section id="skills" class="card">
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
